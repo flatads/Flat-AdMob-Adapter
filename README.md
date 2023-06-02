@@ -12,13 +12,13 @@
 ```groovy
 buildscript {
     repositories {
-        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://maven-pub.flat-ads.com/repository/maven-public/"}
         maven { url "https://jitpack.io" }
     }
 }
 allprojects {
     repositories {
-        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://maven-pub.flat-ads.com/repository/maven-public/"}
         maven { url "https://jitpack.io" }
     }
 }
@@ -46,4 +46,4 @@ implementation "com.flatads.sdk:flatads:1.4.16-GP"
       4. Rewarded ：com.flatads.adapter.admob.event.FlatRewardEvent 
    3. Parameter ： 配置传给Adapter的参数，**格式必须为Json** 
       1. 例子：{"app_id":"EWAHVE8S","app_token":"uihjbnklnm78gyhu","ad_unit_id":"5d47fad0-b7a4-11eb-80ed-032568831082"} 
-      2. **app_id、app_token、ad_unit_id 必须固定**，设置banner时可以添加banner_size选择banner样式，0 ：小样式（300 * 50） ，1 ： 大样式（300 * 250）
+      2. **app_id、app_token、ad_unit_id 必须固定**，设置banner时可以添加banner_size选择banner样式，0 ：小样式（300 * 50） ，1 ： 大样式（300 * 250），是整型
